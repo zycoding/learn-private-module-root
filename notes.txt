@@ -1,0 +1,16 @@
+https://developer.hashicorp.com/terraform/tutorials/modules/module-private-registry-share
+
+1. Fork the module https://github.com/hashicorp-education/learn-private-module-aws-s3-webapp 
+
+2. Renamed it to terraform-aws-s3-webapp because we mush follow the terraform-<PROVIDER>-<NAME> format in order to push it to hcp registry.
+
+3. Create a new releases and tag it 1.0.0. Hcp won't allow module without release tag number.
+https://github.com/zycoding/terraform-aws-s3-webapp/releases/tag/1.0.0
+
+4. Connect to github.com(custom) via Terraform workspace.
+We can do this when create a new registry module.
+
+
+1. Create new workspace, learn-private-module-root
+  Choose VCS -> GitHub connection
+  Then we can select a repo from our connected github account, learn-private-module-root

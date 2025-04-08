@@ -3,7 +3,8 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/hashicorp-learn/s3-webapp/aws"
+  # Modules from the private registry can be referenced using a registry source address of the form app.terraform.io/<ORGANIZATION-NAME>/terraform/<NAME>/<PROVIDER>
+  source  = "app.terraform.io/zycoding/s3-webapp/aws"
   name    = var.name
   region  = var.region
   prefix  = var.prefix
